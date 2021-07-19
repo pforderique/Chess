@@ -1,0 +1,6 @@
+in /build:
+g++ ..\src\spot.cpp ..\src\main.cpp -I ..\src -I ..\include
+.\a.exe
+
+desired:
+cmake -G "MinGW Makefiles" ..
