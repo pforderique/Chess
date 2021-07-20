@@ -14,19 +14,19 @@ class Piece;
 
 class Spot
 {
-private:
-    int x;
-    int y;
-    Piece* piece;
-
 public:
-    Spot(int x, int y, Piece* piece = nullptr);
+    Spot(int x, int y, Piece* piece);
 
     Piece* getPiece();
     int getX();
     int getY();
     void setX(int x);
     void setY(int y);
+
+private:
+    int x;
+    int y;
+    Piece* piece;
 };
 
 } // namespace chess

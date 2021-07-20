@@ -16,6 +16,7 @@ public:
     ~Pawn();
 
     bool canMove(Board* board, Spot* start, Spot* end) override;
+    std::string toString() override;
     bool hasMoved();
 
 private:

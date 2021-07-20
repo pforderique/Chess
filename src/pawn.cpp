@@ -7,7 +7,9 @@ namespace chess
 
 Pawn::Pawn(bool white) : moved(false)
 { 
-    this->setWhite(white); 
+    this->setWhite(white);
+    this->setKilled(false);
+    type = 'P';
 }
 
 Pawn::~Pawn() = default;
@@ -16,6 +18,11 @@ bool Pawn::canMove(Board* board, Spot* start, Spot* end)
 {
     // Pawn may only move 2 spots on first move
     std::cout << "Pawn's canMove() called." << std::endl;
+}
+
+std::string Pawn::toString()
+{
+    return "Piece Type: " + type;
 }
 
 bool Pawn::hasMoved() {return this->moved;}

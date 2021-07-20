@@ -1,5 +1,5 @@
 in /build:
-g++ ..\src\spot.cpp ..\src\main.cpp -I ..\src -I ..\include
+g++ ..\src\piece.cpp ..\src\pawn.cpp ..\src\spot.cpp  ..\src\board.cpp  ..\src\main.cpp -I ..\src -I ..\include
 .\a.exe
 
 desired:

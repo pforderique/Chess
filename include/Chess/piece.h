@@ -7,6 +7,8 @@
 #ifndef PIECE_H
 #define PIECE_H
 
+#include <string>
+
 #include <Chess/board.h>
 #include <Chess/spot.h>
 
@@ -20,11 +22,13 @@ class Piece
 {
 public:
     virtual bool canMove(Board* board, Spot* start, Spot* end) = 0;
+    virtual std::string toString() = 0;
 
     bool isWhite();
     void setWhite(bool white);
     bool isKilled();
     void setKilled(bool killed);
+    char getType();
 
 protected:
     bool white;  // white or black
