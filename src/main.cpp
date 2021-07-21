@@ -15,7 +15,7 @@
 
 void needPiece(chess::Piece* piece) 
 {
-    piece->canMove(nullptr, nullptr, nullptr);
+    piece->canMove(NULL, NULL, NULL);
 }
 
 int main() {
@@ -23,13 +23,15 @@ int main() {
     std::cout << "===== CHESS GAME STARTED =====" << std::endl;
 
     chess::Board board;
-    printf("Spot at 0,1 is a %c\n", board.getSpotAt(0,1)->getPiece()->getType());
-    printf(
-        "Spot at 1,1 is white? Ans = %d\n",
-        board.getSpotAt(1,1)->getPiece()->isWhite());
+    printf("Spot at 0,1 is a %c\n", 
+            board.getSpotAt(0,1)->getPiece()->getType());
+    printf("Spot at 1,1 is white? Ans = %d\n",
+            board.getSpotAt(1,1)->getPiece()->isWhite());
 
     chess::Pawn pawn(true);
     needPiece(&pawn);
     
+    board.printBoard();
+
     return 0;
 }

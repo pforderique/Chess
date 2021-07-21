@@ -17,6 +17,7 @@ public:
 
     void resetBoard();
     Spot* getSpotAt(int x, int y);
+    void printBoard();
 
 private:
     const int BOARD_SIZE = 2;   

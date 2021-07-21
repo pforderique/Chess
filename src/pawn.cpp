@@ -20,11 +20,6 @@ bool Pawn::canMove(Board* board, Spot* start, Spot* end)
     std::cout << "Pawn's canMove() called." << std::endl;
 }
 
-std::string Pawn::toString()
-{
-    return "Piece Type: " + type;
-}
-
 bool Pawn::hasMoved() {return this->moved;}
 
 } // namespace chess

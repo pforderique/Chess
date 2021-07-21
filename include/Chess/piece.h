@@ -22,7 +22,6 @@ class Piece
 {
 public:
     virtual bool canMove(Board* board, Spot* start, Spot* end) = 0;
-    virtual std::string toString() = 0;
 
     bool isWhite();
     void setWhite(bool white);
