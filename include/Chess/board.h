@@ -20,7 +20,7 @@ public:
     void printBoard();
 
 private:
-    const int BOARD_SIZE = 2;   
+    const int BOARD_SIZE = 8;   
 
     // 2D grid of Spots mimiced as 1D 
     // [white*8*2, empty*8*4, black*8*2]
