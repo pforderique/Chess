@@ -16,7 +16,6 @@ Rook::~Rook() = default;
 
 bool Rook::canMove(Board* board, Spot* start, Spot* end)
 {
-    // Rook may only move 2 spots on first move
     printf("Rook's canMove() called.\n");
 }
 
