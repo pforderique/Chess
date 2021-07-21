@@ -11,6 +11,7 @@
 
 #include <Chess/board.h>
 #include <Chess/pawn.h>
+#include <Chess/rook.h>
 #include <Chess/spot.h>
 
 void needPiece(chess::Piece* piece) 
@@ -29,7 +30,9 @@ int main() {
             board.getSpotAt(1,1)->getPiece()->isWhite());
 
     chess::Pawn pawn(true);
+    chess::Rook rook(false);
     needPiece(&pawn);
+    needPiece(&rook);
     
     board.printBoard();
 

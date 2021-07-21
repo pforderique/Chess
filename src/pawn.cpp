@@ -1,6 +1,6 @@
 #include <Chess/pawn.h>
 
-#include <iostream>
+#include <stdio.h>  // printf
 
 namespace chess
 {
@@ -17,9 +17,9 @@ Pawn::~Pawn() = default;
 bool Pawn::canMove(Board* board, Spot* start, Spot* end)
 {
     // Pawn may only move 2 spots on first move
-    std::cout << "Pawn's canMove() called." << std::endl;
+    printf("Pawn's canMove() called.\n");
 }
 
-bool Pawn::hasMoved() {return this->moved;}
+bool Pawn::hasMoved() {return moved;}
 
 } // namespace chess
