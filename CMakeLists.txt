@@ -7,8 +7,10 @@ project( Chess )
 include_directories( ./include ./src )
 
 # target
-add_executable( binary 
+add_executable( chess_game 
     ./src/main.cpp 
     ./src/spot.cpp 
-    ./src/pawn.cpp 
+    ./src/piece.cpp
+    ./src/pawn.cpp
+    ./src/board.cpp
 )

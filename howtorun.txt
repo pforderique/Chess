@@ -1,6 +1,10 @@
-in /build:
+OLD:
 g++ ..\src\piece.cpp ..\src\pawn.cpp ..\src\spot.cpp  ..\src\board.cpp  ..\src\main.cpp -I ..\src -I ..\include
 .\a.exe
 
-desired:
-cmake -G "MinGW Makefiles" ..
+NEW (using CMake):
+RUN ONCE (when new files added): 
+cmake .. -G "MinGW Makefiles"
+RUN EVERYTIME (files modified):
+cmake --build .
+.\chess_game.exe

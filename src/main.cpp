@@ -20,15 +20,16 @@ void needPiece(chess::Piece* piece)
 
 int main() {
 
-    std::cout << "=== CHESS GAME STARTED! ===" << std::endl;
+    std::cout << "===== CHESS GAME STARTED =====" << std::endl;
 
     chess::Board board;
     printf("Spot at 0,1 is a %c\n", board.getSpotAt(0,1)->getPiece()->getType());
+    printf(
+        "Spot at 1,1 is white? Ans = %d\n",
+        board.getSpotAt(1,1)->getPiece()->isWhite());
 
     chess::Pawn pawn(true);
-
-    chess::Spot mySpot(0,2,&pawn);
-    printf("mySpot's pos = (%d, %d)", mySpot.getX(), mySpot.getY());
+    needPiece(&pawn);
     
     return 0;
 }
