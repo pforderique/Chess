@@ -14,6 +14,8 @@
 #include <Chess/rook.h>
 #include <Chess/knight.h>
 #include <Chess/bishop.h>
+#include <Chess/queen.h>
+#include <Chess/king.h>
 #include <Chess/spot.h>
 
 void needPiece(chess::Piece* piece) 
@@ -35,10 +37,15 @@ int main() {
     chess::Rook rook(false);
     chess::Knight knight(true);
     chess::Bishop bishop(true);
+    chess::Queen queen(true);
+    chess::King king(false);
+
     needPiece(&pawn);
     needPiece(&rook);
     needPiece(&knight);
     needPiece(&bishop);
+    needPiece(&queen);
+    needPiece(&king);
 
     board.printBoard();
 

@@ -15,5 +15,7 @@ add_executable( chess_game
     ./src/rook.cpp
     ./src/knight.cpp
     ./src/bishop.cpp
+    ./src/queen.cpp
+    ./src/king.cpp
     ./src/board.cpp
 )
