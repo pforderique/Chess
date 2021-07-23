@@ -18,4 +18,6 @@ add_executable( chess_game
     ./src/queen.cpp
     ./src/king.cpp
     ./src/board.cpp
+    ./src/player.cpp
+    ./src/move.cpp
 )

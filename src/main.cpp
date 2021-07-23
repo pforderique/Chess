@@ -11,6 +11,8 @@
 
 #include <Chess/board.h>
 #include <Chess/chess_pieces.h>
+#include <Chess/move.h>
+#include <Chess/player.h>
 #include <Chess/spot.h>
 
 void needPiece(chess::Piece* piece) 
@@ -27,6 +29,9 @@ int main() {
             board.getSpotAt(0,1)->getPiece()->getType());
     printf("Spot at 1,1 is white? Ans = %d\n",
             board.getSpotAt(1,1)->getPiece()->isWhite());
+
+    chess::Player player1(true);
+    player1.printPlayer();
 
     chess::Pawn pawn(true);
     chess::Rook rook(false);
