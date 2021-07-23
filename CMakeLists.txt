@@ -20,4 +20,5 @@ add_executable( chess_game
     ./src/board.cpp
     ./src/player.cpp
     ./src/move.cpp
+    ./src/game.cpp
 )

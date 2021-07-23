@@ -1,6 +1,5 @@
 #include <Chess/move.h>
 
-#include <stdio.h>  // printf
 #include <Chess/piece.h>
 #include <Chess/player.h>
 #include <Chess/spot.h>
