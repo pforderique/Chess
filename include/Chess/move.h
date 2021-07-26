@@ -16,6 +16,10 @@ public:
 
     bool isCastlingMove(); 
     void setCastlinMove(bool castling);
+    Spot* getStart();
+    Spot* getEnd();
+    Piece* getPieceKilled();
+    void setPieceKilled(Piece* piece);
 
 private:
     Player* player;

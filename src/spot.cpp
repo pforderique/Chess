@@ -8,6 +8,7 @@ Spot::Spot(int x, int y, Piece* piece) :
     x(x), y(y), piece(piece) {};
 
 Piece* Spot::getPiece() {return this->piece;}
+void Spot::setPiece(Piece* piece) {this->piece = piece;}
 
 int Spot::getX() {return this->x;}
 int Spot::getY() {return this->y;}

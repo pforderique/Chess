@@ -10,8 +10,6 @@
 namespace chess
 {
 
-// class Player;
-
 enum GameStatus 
 {
     ACTIVE,
@@ -26,8 +24,9 @@ class Game
 {
 
 public:
+
     bool isEnd();
-    bool getStatus();
+    GameStatus getStatus();
     void setStatus(GameStatus status);
     bool playerMove(
         Player player, 

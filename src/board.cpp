@@ -1,6 +1,8 @@
 #include <Chess/board.h>
 
+#include <stdexcept>
 #include <stdio.h>  // printf
+
 #include <Chess/chess_pieces.h>
 
 namespace chess
@@ -55,6 +57,10 @@ void Board::resetBoard()
 
 Spot* Board::getSpotAt(int x, int y)
 {
+    if (x < 0 || x >= BOARD_SIZE || y < 0 || y >= BOARD_SIZE) 
+    {
+        throw std::invalid_argument("x and/or y not valid");
+    }
     return &grid.at(x*BOARD_SIZE + y);
 }
 

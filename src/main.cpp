@@ -11,6 +11,7 @@
 
 #include <Chess/board.h>
 #include <Chess/chess_pieces.h>
+#include <Chess/game.h>
 #include <Chess/move.h>
 #include <Chess/player.h>
 #include <Chess/spot.h>
@@ -53,5 +54,11 @@ int main() {
 
     board.printBoard();
 
+    chess::Game game;
+
     return 0;
 }
+
+// move class needs getStart and getEnd
+// destPiece in GAME class needs to use getEnd() not getStart()
+// sourcePiece.isCastlingMove() should be move.isCasdfafs ?????

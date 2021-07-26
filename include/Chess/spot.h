@@ -18,6 +18,7 @@ public:
     Spot(int x, int y, Piece* piece);
 
     Piece* getPiece();
+    void setPiece(Piece* piece);
     int getX();
     int getY();
     void setX(int x);
