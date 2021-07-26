@@ -40,12 +40,16 @@ int main() {
     chess::Queen queen(true);
     chess::King king(false);
 
-    needPiece(&pawn);
+    // needPiece(&pawn);
     needPiece(&rook);
     needPiece(&knight);
     needPiece(&bishop);
     needPiece(&queen);
     needPiece(&king);
+
+    printf("Can the pawn at 1,7 move to 3,7? = %d",
+            pawn.canMove(
+                &board, board.getSpotAt(1,7), board.getSpotAt(3,7)));
 
     board.printBoard();
 
